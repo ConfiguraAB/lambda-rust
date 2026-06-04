@@ -5,9 +5,9 @@ Forked to update rust version
 
 
 ## 🤔 about
+This docker image extends the [official AWS base image](https://gallery.ecr.aws/lambda/provided) that is built on top of the minimal footprint of Amazon Linux 2023 a.k.a. AL2023, and installs [rustup](https://rustup.rs/) and the *stable* rust toolchain.
 
-This docker image extends [lambda ci `provided.al2`](https://github.com/lambci/docker-lambda#documentation) builder docker image, a faithful reproduction of the actual AWS "**provided.al2**" Lambda runtime environment,
-and installs [rustup](https://rustup.rs/) and the *stable* rust toolchain.
+For additional context, the previous docker image that was based off AL2, [lambda ci `provided.al2`](https://github.com/lambci/docker-lambda#documentation), will be approaching EOS on 30th June 2026, and since the repository is also no longer maintained, we will be switching to official images provided by AWS directly.
 
 This provides a build environment, consistent with your target execution environment for predictable results.
 

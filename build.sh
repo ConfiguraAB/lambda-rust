@@ -25,7 +25,7 @@ fi
 export CARGO_TARGET_DIR=$PWD/target/lambda
 (
     if [[ $# -gt 0 ]]; then
-        yum install -y "$@"
+        dnf install -y "$@"
     fi
 
     if test -f "$HOOKS_DIR/$INSTALL_HOOK"; then
