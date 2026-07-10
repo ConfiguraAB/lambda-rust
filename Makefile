@@ -1,7 +1,7 @@
 VERSION ?= 0.4.0
 RUST_VERSION ?= 1.96.1
-REPO ?= softprops/lambda-rust
-TAG ?= "$(REPO):$(VERSION)-rust-$(RUST_VERSION)"
+REPO ?= ghcr.io/configuraab/lambda-rust
+TAG ?= "$(REPO):$(RUST_VERSION)"
 
 publish: build
 	@docker push $(TAG)
